@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/buttom_nav"
-    app:startDestination="@id/ticketFragment2">
+    app:startDestination="@id/ticketFragment">
 
     <fragment
-        android:id="@+id/homeFragment2"
+        android:id="@+id/homeFragment"
         android:name="com.example.travelapp.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
@@ -16,17 +16,17 @@
         android:label="fragment_order"
         tools:layout="@layout/fragment_order" />
     <fragment
-        android:id="@+id/profileFragment2"
+        android:id="@+id/profileFragment"
         android:name="com.example.travelapp.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
-        android:id="@+id/ticketFragment2"
+        android:id="@+id/ticketFragment"
         android:name="com.example.travelapp.TicketFragment"
         android:label="fragment_ticket"
         tools:layout="@layout/fragment_ticket" >
         <action
-            android:id="@+id/action_ticketFragment2_to_orderFragment"
+            android:id="@+id/action_ticketFragment_to_orderFragment"
             app:destination="@id/orderFragment" />
     </fragment>
 </navigation>
