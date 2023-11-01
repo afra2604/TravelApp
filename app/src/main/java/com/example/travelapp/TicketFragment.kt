@@ -32,7 +32,6 @@ class TicketFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         with(binding) {
             val action = TicketFragmentDirections.actionTicketFragmentToOrderFragment();
-            //ambil action dari navigation buttom navigation xml,setelah diambil baru :
             btnBuy.setOnClickListener {
                 //dari ticket fragment jalan ke checkout fragment
                 findNavController().navigate(action)

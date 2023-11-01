@@ -61,7 +61,7 @@ class OrderFragment : Fragment() {
                     override fun onNothingSelected(parent: AdapterView<*>?) {
                     }
                 }
-
+//ketika button buy diklik maka akan kembali ke halaman ticket
             btnBuy2.setOnClickListener {
                 val selectedOrder = spinnerOrder.selectedItem.toString()
                 if (selectedOrder.isNotBlank()) {
