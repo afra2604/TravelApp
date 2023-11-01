@@ -31,10 +31,10 @@ class TicketFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         with(binding) {
-            val action = TicketFragmentDirections.actionTicketFragmentToOrderFragment(); //checkoutnya minta argumen
-            //ambil action dari navigation bttom_navigation.xml,setelah diambil baru :
+            val action = TicketFragmentDirections.actionTicketFragmentToOrderFragment();
+            //ambil action dari navigation buttom navigation xml,setelah diambil baru :
             btnBuy.setOnClickListener {
-                //dari home fragment jalan ke checkout fragment
+                //dari ticket fragment jalan ke checkout fragment
                 findNavController().navigate(action)
             }
         }

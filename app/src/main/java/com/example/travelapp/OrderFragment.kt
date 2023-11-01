@@ -20,6 +20,7 @@ import com.example.travelapp.databinding.FragmentOrderBinding
 class OrderFragment : Fragment() {
     private lateinit var binding: FragmentOrderBinding
 
+    //isi dari spinner atau pilihan jenis tiketnya
     private val order = arrayOf(
         "First Class Ticket",
         "Business Class Ticket",
@@ -43,6 +44,8 @@ class OrderFragment : Fragment() {
                 requireActivity(),
                 android.R.layout.simple_spinner_item,order
             )
+
+            //spinner berbentuk dropdown
             adapterOrder.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
 
             spinnerOrder.adapter = adapterOrder
